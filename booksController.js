@@ -34,7 +34,7 @@ const booksController = {
       .status(202)
       .json({ message: 'You wish is my command!' })
   },
-  
+
   async update(request, response, next) {
     const { author, title } = request.body
     const { id } = request.params
